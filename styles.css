@@ -1,0 +1,29 @@
+body {
+  font-family: "Press Start 2P", "Raleway", sans-serif !important;
+  margin-top: 5em;
+  background: linear-gradient(180deg, purple, indigo, rgb(89, 0, 255));
+  min-height: 8em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2 {
+  -webkit-text-stroke: 0.375px rgba(255, 255, 255, 0.9);
+}
+
+nav {
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.25);
+}
+
+img {
+  object-fit: contain;
+  object-position: top center;
+  max-height: 50vh;
+}
+
+footer {
+  margin-bottom: 1em;
+}
