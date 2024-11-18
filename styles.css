@@ -1,12 +1,13 @@
 body {
   font-family: "Press Start 2P", "Raleway", sans-serif !important;
   margin-top: 5em;
-  background: linear-gradient(180deg, purple, indigo, rgb(89, 0, 255));
-  min-height: 8em;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background: linear-gradient(180deg, purple, indigo, rgb(89, 0, 255)); */
+    background-image: url("./images/purpleGridBg.jpg");
+  height: 100%;
+   background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
 h1,
@@ -14,16 +15,76 @@ h2 {
   -webkit-text-stroke: 0.375px rgba(255, 255, 255, 0.9);
 }
 
+p{
+  color: rgb(255, 255, 255);
+}
+
 nav {
   box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.25);
+}
+
+.character{
+  margin-left: -1.5em;
+  width: 46px;
+  height: 39px;
+  transform: scale(1.5) !important;
+  background: url(./images/characterSpritesheet.png);
+}
+
+.character:hover{
+   animation: characterAnimate 0.9s steps(8) infinite;
+}
+
+@keyframes characterAnimate{
+  from{
+    background-position: 0;
+  }
+  to{
+    background-position: 464px;
+  }
+}
+
+.carousel-container{
+    background-color: rgba(209, 209, 209, 0.5);
+  border-radius: 2.5%;
+  width: 94vw;
+  padding-bottom: 1.5em;
+}
+
+.arcade-container{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.arcade{
+  position:relative;
+  top: 0;
+  left: 0;
+}
+
+.carousel-inner{
+  position: absolute;
+  top: 28%;
+  left: 35%;
+  width: 17em;
+  height: 17em;
+  border-radius: 2.5%;
 }
 
 img {
   object-fit: contain;
   object-position: top center;
   max-height: 50vh;
+  margin-top: 1em;
 }
 
 footer {
   margin-bottom: 1em;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
