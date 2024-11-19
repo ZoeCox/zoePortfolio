@@ -45,38 +45,38 @@ nav {
 }
 
 .carousel-container{
-    background-color: rgba(209, 209, 209, 0.5);
+   width: 48vw;
+    height: 72vh;
+    /* background-color: rgba(209, 209, 209, 0.5); */
+      background-image: url(./images/arcadeMachine.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   border-radius: 2.5%;
-  width: 94vw;
+
   padding-bottom: 1.5em;
 }
 
-.arcade-container{
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.arcade{
-  position:relative;
-  top: 0;
-  left: 0;
-}
-
-.carousel-inner{
-  position: absolute;
-  top: 28%;
-  left: 35%;
-  width: 17em;
-  height: 17em;
-  border-radius: 2.5%;
-}
-
-img {
-  object-fit: contain;
-  object-position: top center;
-  max-height: 50vh;
+.carousel-inner {
   margin-top: 1em;
+  z-index: -1;
+  left: 25%;
+  right: 75%;
+}
+
+img{
+    object-fit: cover;
+    object-position: center;
+    margin-top: 10em;
+  width: 72rem;
+  height: 24rem;
+  max-width: 50%;
+  max-height: 50%;
+
 }
 
 footer {
@@ -84,7 +84,16 @@ footer {
 }
 
 @media only screen and (max-device-width: 1366px) {
-  .parallax {
+  body {
     background-attachment: scroll;
   }
 }
+
+/* !!BELOW IS VERY IMPORTANT TO SOLVE!! */
+/* @media (max-width: 1550px){
+  img{
+width: 125vw;
+max-height: 30vh;
+  }
+} */
+/* SMALER SCREENS MAKE SURE DOESN'T GO OUT OF BOX!! */
