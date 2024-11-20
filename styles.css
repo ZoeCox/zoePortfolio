@@ -44,39 +44,30 @@ nav {
   }
 }
 
+
+.carousel-whole{
+   max-width: 60vw;
+    max-height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5%;
+    padding-bottom: 1.5em;
+    right: -18%;
+}
+
 .carousel-container{
-   width: 48vw;
-    height: 72vh;
-    /* background-color: rgba(209, 209, 209, 0.5); */
-      background-image: url(./images/arcadeMachine.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  border-radius: 2.5%;
-
-  padding-bottom: 1.5em;
+    position: absolute;
+    display: flex;
+    justify-content: center;        
+    margin-top: 8rem;
+    z-index: -1;
 }
 
-.carousel-inner {
-  margin-top: 1em;
-  z-index: -1;
-  left: 25%;
-  right: 75%;
-}
-
-img{
+.carousel-image{
     object-fit: cover;
     object-position: center;
-    margin-top: 10em;
-  width: 72rem;
-  height: 24rem;
-  max-width: 50%;
-  max-height: 50%;
-
 }
 
 footer {
@@ -88,12 +79,3 @@ footer {
     background-attachment: scroll;
   }
 }
-
-/* !!BELOW IS VERY IMPORTANT TO SOLVE!! */
-/* @media (max-width: 1550px){
-  img{
-width: 125vw;
-max-height: 30vh;
-  }
-} */
-/* SMALER SCREENS MAKE SURE DOESN'T GO OUT OF BOX!! */
