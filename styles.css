@@ -2,12 +2,12 @@ body {
   font-family: "Press Start 2P", "Raleway", sans-serif !important;
   margin-top: 5em;
   /* background: linear-gradient(180deg, purple, indigo, rgb(89, 0, 255)); */
-    background-image: url("./images/purpleGridBg.jpg");
+  background-image: url("./images/purpleGridBg.jpg");
   height: 100%;
-   background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
@@ -15,7 +15,7 @@ h2 {
   -webkit-text-stroke: 0.375px rgba(255, 255, 255, 0.9);
 }
 
-p{
+p {
   color: rgb(255, 255, 255);
 }
 
@@ -23,7 +23,7 @@ nav {
   box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.25);
 }
 
-.character{
+.character {
   margin-left: -1.5em;
   width: 46px;
   height: 39px;
@@ -31,51 +31,51 @@ nav {
   background: url(./images/characterSpritesheet.png);
 }
 
-.character:hover{
-   animation: characterAnimate 0.9s steps(8) infinite;
+.character:hover {
+  animation: characterAnimate 0.9s steps(8) infinite;
 }
 
-@keyframes characterAnimate{
-  from{
+@keyframes characterAnimate {
+  from {
     background-position: 0;
   }
-  to{
+  to {
     background-position: 464px;
   }
 }
 
-.carousel-whole{
-   max-width: 60vw;
-    max-height: 70vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2.5%;
-    padding-bottom: 1.5em;
-    right: -20%;
-    margin-top: 4em;
+.carousel-whole {
+  max-width: 60vw;
+  max-height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5%;
+  padding-bottom: 1.5em;
+  right: -20%;
+  margin-top: 4em;
 }
 
-.arcade{
+.arcade {
   max-width: 100%;
   max-height: 80%;
 }
 
-.carousel-container{
-    max-width: 75% !important;
-    max-height: 75% !important;
-    position: absolute;
-    display: flex;
-    justify-content: center;        
-    z-index: -1;
+.carousel-container {
+  max-width: 75% !important;
+  max-height: 75% !important;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
 }
 
-.carousel-image{
-      margin-top: 5rem;
-    object-fit: cover;
-    object-position: center;
-     max-width: 100%;
+.carousel-image {
+  margin-top: 5rem;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
   max-height: 80%;
 }
 
@@ -89,10 +89,18 @@ footer {
   }
 }
 
-@media(max-width: 650px){
-  .carousel-whole{
-   max-width: 70vw;
+@media (max-width: 650px) {
+  .carousel-whole {
+    max-width: 70vw;
     max-height: 70vh;
-  left: 12%;
+    left: 12%;
+  }
+}
+
+@media (min-width: 800px) {
+  .carousel-whole {
+    max-width: 45vw;
+    max-height: 45vh;
+    left: 12%;
   }
 }
