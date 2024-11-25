@@ -17,6 +17,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet" />
+      <link rel="icon" type="image/x-icon" href="/images/avatar.png">
     <title>Zoe Cox</title>
   </head>
   <body>
@@ -76,6 +77,7 @@
     </div>
   </nav>
   <main>
+    <!-- class=" d-flex flex-column align-items-center justify-content-center" -->
     <div class="hero container-fluid text-center">
       <h1>Zoe's Hero</h1>
       <p>
@@ -91,7 +93,7 @@
       <h2>I will add an image of something here</h2>
     </div>
     <div class="project-section container-fluid text-center">
-       <h2>Have a play with some of the things I've made!</h2>
+       <h2 class="project-intro-text">Have a play with some of the things I've made!</h2>
        <div class="carousel-whole">
           <button class="carousel-button carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -121,17 +123,17 @@
             aria-label="Slide 3"></button>
         </div>   
         <div class="carousel-inner">
-          <div class="carousel-item active  ">
+          <div class="carousel-item active carousel-image1">
             <img 
               src="./images/capmus with alleybird.png" 
-              class="carousel-image d-block img-responsive carousel-image1"
+              class="carousel-image d-block img-responsive"
               alt="..." />
           </div>
-          <div class="carousel-item not-active">
-            <img src="./images/Capmus.jpg" class=" carousel-image2 carousel-image d-block img-responsive" alt="..." />
+          <div class="carousel-item carousel-image2">
+            <img src="./images/Capmus.jpg" class="carousel-image d-block img-responsive" alt="..." />
           </div>
-          <div class="carousel-item not-active">
-            <img src="./images/willow.jpg" class="carousel-image2 carousel-image d-block img-responsive" alt="..." />
+          <div class="carousel-item carousel-image3">
+            <img src="./images/willow.jpg" class=" carousel-image d-block img-responsive" alt="..." />
           </div>
         </div>    
       </div>
@@ -141,9 +143,8 @@
     <span class="visually-hidden">Next</span>
   </button>
             </div>
-      <br>
-            <p class="project-text">image 1 has active class</p>
             </div>
+            <p class="project-text text-center">image 1 has active class</p>
       <hr />
       <!-- RIP OUT BELOW -->
       <div class="hero container-fluid text-center">

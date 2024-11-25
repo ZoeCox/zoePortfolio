@@ -44,17 +44,24 @@ nav {
   }
 }
 
+.project-intro-text{
+  padding-bottom: 2em;
+}
+
+.project-text{
+  margin-top: 3em;
+}
+
 .carousel-whole {
-  max-width: 60vw;
-  max-height: 70vh;
+    max-width: 35rem !important;
+  max-height: 35rem !important;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2.5%;
   padding-bottom: 1.5em;
-  right: -20%;
-  margin-top: 4em;
+  margin: 0 auto;
 }
 
 .arcade {
@@ -68,6 +75,7 @@ nav {
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: -1;
 }
 
@@ -89,18 +97,11 @@ footer {
   }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 800px) {
   .carousel-whole {
-    max-width: 70vw;
-    max-height: 70vh;
-    left: 12%;
+    max-width: 65vw !important;
+    max-height: 65vh !important;
   }
-}
+} */
 
-@media (min-width: 800px) {
-  .carousel-whole {
-    max-width: 45vw;
-    max-height: 45vh;
-    left: 12%;
-  }
-}
+

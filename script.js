@@ -12,30 +12,41 @@ const carouselTracker = {
 };
 
 const carouselBtns = document.querySelectorAll(".carousel-button");
+const carousel = document.querySelector(".carousel-whole");
 
-for (let i = 0; i < carouselBtns.length; i++) {
-  carouselBtns[i].addEventListener("click", function () {
-    if (carouselImg2.closest(".active")) {
-      carouselTracker.img2Active = true;
-      console.log("image 2 has active class");
-      projectText.innerHTML = "This is image two";
-    }
-    //  if (carouselTracker.img2Active) {
-    //    console.log("image 2 active");
-    //    projectText.innerHTML = "This is image two";
-    //  }
-    else if (carouselImg2.closest(".not-active")) {
-      carouselTracker.img2Active = false;
-      projectText.innerHTML = "This isn't image two";
-    }
+carousel.addEventListener("slide.bs.carousel", () => {
+  console.log("you switched slide");
+});
 
-    //  else {
-    //   carouselTracker.img2Active = false;
-    //   projectText.innerHTML = "This isn't image two";
-    // }
-    console.log(carouselTracker);
-    //only toggling picture 2 to active when i click onto image 3??
-  });
-}
+// for (let i = 0; i < carouselBtns.length; i++) {
+//   carouselBtns[i].addEventListener("click", function () {
+
+//   });
+// }
+
+// for (let i = 0; i < carouselBtns.length; i++) {
+//   carouselBtns[i].addEventListener("click", function () {
+//     if (carouselImg2.closest(".active")) {
+//       carouselTracker.img2Active = true;
+//       console.log("image 2 has active class");
+//       projectText.innerHTML = "This is image two";
+//     }
+//     //  if (carouselTracker.img2Active) {
+//     //    console.log("image 2 active");
+//     //    projectText.innerHTML = "This is image two";
+//     //  }
+//     else if (carouselImg2.closest(".not-active")) {
+//       carouselTracker.img2Active = false;
+//       projectText.innerHTML = "This isn't image two";
+//     }
+
+//     //  else {
+//     //   carouselTracker.img2Active = false;
+//     //   projectText.innerHTML = "This isn't image two";
+//     // }
+//     console.log(carouselTracker);
+//     //only toggling picture 2 to active when i click onto image 3??
+//   });
+// }
 
 // projectText.innerHTML = "hello";
