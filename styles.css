@@ -87,6 +87,10 @@ nav {
   max-height: 80%;
 }
 
+canvas{
+  border: white solid 0.25em;
+}
+
 footer {
   margin-bottom: 1em;
 }
@@ -96,12 +100,4 @@ footer {
     background-attachment: scroll;
   }
 }
-
-/* @media (max-width: 800px) {
-  .carousel-whole {
-    max-width: 65vw !important;
-    max-height: 65vh !important;
-  }
-} */
-
 
