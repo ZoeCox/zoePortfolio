@@ -89,6 +89,7 @@ nav {
 
 canvas{
   border: white solid 0.25em;
+  max-width: 75vw;
 }
 
 footer {
