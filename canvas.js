@@ -23,6 +23,16 @@ const rockets = {
   rocket3: { xCoord: 385, yCoord: 200 },
 };
 
+document.addEventListener("click", (event) => {
+  const canvasBoundaries = canvas.getBoundingClientRect();
+  const mouseYCoord = event.clientY;
+  const mouseXCoord = event.clientX;
+  console.log(mouseXCoord, mouseYCoord, canvasBoundaries);
+  // if (mouseXCoord >= canvasBoundaries.height) {
+  //   console.log("you're clicking higher than the canvas");
+  // }
+});
+
 window.onload = () => {
   playCanvas();
 };
@@ -36,7 +46,7 @@ function rocketMove() {
 
 function playCanvas() {
   render();
-  rocketMove();
+  // rocketMove();
   requestAnimationFrame(playCanvas);
 }
 
