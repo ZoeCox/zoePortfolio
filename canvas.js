@@ -46,7 +46,7 @@ function rocketMove() {
 
 function playCanvas() {
   render();
-  // rocketMove();
+  rocketMove();
   requestAnimationFrame(playCanvas);
 }
 
