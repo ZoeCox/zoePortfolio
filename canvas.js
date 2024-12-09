@@ -3,6 +3,11 @@ const context = canvas.getContext("2d");
 canvas.height = 300;
 canvas.width = 500;
 const canvasDiv = document.querySelector(".canvas-container");
+const clickOverlay = document.querySelector(".click-overlay");
+
+clickOverlay.addEventListener("click", () => {
+  console.log("strip has been clicked");
+});
 
 const rocket1 = new Image();
 rocket1.ready = false;
@@ -23,15 +28,15 @@ const rockets = {
   rocket3: { xCoord: 385, yCoord: 200 },
 };
 
-document.addEventListener("click", (event) => {
-  const canvasBoundaries = canvas.getBoundingClientRect();
-  const mouseYCoord = event.clientY;
-  const mouseXCoord = event.clientX;
-  console.log(mouseXCoord, mouseYCoord, canvasBoundaries);
-  // if (mouseXCoord >= canvasBoundaries.height) {
-  //   console.log("you're clicking higher than the canvas");
-  // }
-});
+// document.addEventListener("click", (event) => {
+//   const canvasBoundaries = canvas.getBoundingClientRect();
+//   const mouseYCoord = event.clientY;
+//   const mouseXCoord = event.clientX;
+//   console.log(mouseXCoord, mouseYCoord, canvasBoundaries);
+//   // if (mouseXCoord >= canvasBoundaries.height) {
+//   //   console.log("you're clicking higher than the canvas");
+//   // }
+// });
 
 window.onload = () => {
   playCanvas();
@@ -51,7 +56,8 @@ function playCanvas() {
 }
 
 function render() {
-  context.fillStyle = "#241d57";
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.fillStyle = "rgba(1, 1, 1, 0.0)";
   context.fillRect(0, 0, canvas.width, canvas.height);
   context.drawImage(
     rocket1,

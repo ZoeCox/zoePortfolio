@@ -44,16 +44,16 @@ nav {
   }
 }
 
-.project-intro-text{
+.project-intro-text {
   padding-bottom: 2em;
 }
 
-.project-text{
+.project-text {
   margin-top: 3em;
 }
 
 .carousel-whole {
-    max-width: 35rem !important;
+  max-width: 35rem !important;
   max-height: 35rem !important;
   position: relative;
   display: flex;
@@ -87,9 +87,15 @@ nav {
   max-height: 80%;
 }
 
-canvas{
-  border: white solid 0.25em;
+canvas {
+  /* border: white solid 0.25em; */
   max-width: 75vw;
+}
+
+.click-overlay {
+  width: 100%;
+  height: 50%;
+  border: white solid 0.25em;
 }
 
 footer {
@@ -101,4 +107,3 @@ footer {
     background-attachment: scroll;
   }
 }
-
