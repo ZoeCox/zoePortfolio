@@ -42,6 +42,10 @@ window.onload = () => {
   playCanvas();
 };
 
+// clickOverlay.addEventListener("click", () => {
+//   playCanvas();
+// });
+
 function rocketMove() {
   rockets.rocket1.yCoord-- * rockets.speed;
   rockets.rocket2.yCoord-- * rockets.speed;
@@ -50,6 +54,9 @@ function rocketMove() {
 //test function
 
 function playCanvas() {
+  // clickOverlay.addEventListener("click", () => {
+  //   requestAnimationFrame(rocketMove);
+  // });
   render();
   rocketMove();
   requestAnimationFrame(playCanvas);
