@@ -10,6 +10,10 @@ body {
   background-size: cover;
 }
 
+.hidden{
+  display: none;
+}
+
 h1,
 h2 {
   -webkit-text-stroke: 0.375px rgba(255, 255, 255, 0.9);
@@ -46,6 +50,7 @@ nav {
 
 .project-intro-text {
   padding-bottom: 2em;
+  color:white;
 }
 
 .project-text {
@@ -88,7 +93,6 @@ nav {
 }
 
 canvas {
-  /* border: white solid 0.25em; */
   max-width: 75vw;
 }
 
@@ -96,6 +100,20 @@ canvas {
   width: 100%;
   height: 50%;
   border: white solid 0.25em;
+  color: white;
+  max-width: 75%;
+}
+
+.click-overlay:hover{
+  color: yellow;
+}
+
+.contact-container{
+  text-align: center;
+}
+
+.contact-btn{
+  margin-bottom: 0.25em;
 }
 
 footer {

@@ -1,13 +1,14 @@
+const clickOverlay = document.querySelector(".click-overlay");
+const contactBtns = document.querySelectorAll(".contact-btn");
+const contactContainer = document.querySelector(".contact-container");
+
+contactContainer.classList.add("hidden");
+
 const canvas = document.createElement("canvas");
 const context = canvas.getContext("2d");
-canvas.height = 300;
+canvas.height = 0;
 canvas.width = 500;
 const canvasDiv = document.querySelector(".canvas-container");
-const clickOverlay = document.querySelector(".click-overlay");
-
-clickOverlay.addEventListener("click", () => {
-  console.log("strip has been clicked");
-});
 
 const rocket1 = new Image();
 rocket1.ready = false;
@@ -23,40 +24,21 @@ rocket3.src = "./sprites/rocket.png";
 
 const rockets = {
   speed: 0.25,
-  rocket1: { xCoord: 15, yCoord: 200 },
-  rocket2: { xCoord: 200, yCoord: 200 },
-  rocket3: { xCoord: 385, yCoord: 200 },
+  rocket1: { xCoord: 35, yCoord: 200 },
+  rocket2: { xCoord: 220, yCoord: 200 },
+  rocket3: { xCoord: 405, yCoord: 200 },
 };
-
-// document.addEventListener("click", (event) => {
-//   const canvasBoundaries = canvas.getBoundingClientRect();
-//   const mouseYCoord = event.clientY;
-//   const mouseXCoord = event.clientX;
-//   console.log(mouseXCoord, mouseYCoord, canvasBoundaries);
-//   // if (mouseXCoord >= canvasBoundaries.height) {
-//   //   console.log("you're clicking higher than the canvas");
-//   // }
-// });
-
-window.onload = () => {
-  playCanvas();
-};
-
-// clickOverlay.addEventListener("click", () => {
-//   playCanvas();
-// });
 
 function rocketMove() {
   rockets.rocket1.yCoord-- * rockets.speed;
   rockets.rocket2.yCoord-- * rockets.speed;
   rockets.rocket3.yCoord-- * rockets.speed;
+  setTimeout(() => {
+    canvas.height -= rockets.speed;
+  }, 100);
 }
-//test function
 
 function playCanvas() {
-  // clickOverlay.addEventListener("click", () => {
-  //   requestAnimationFrame(rocketMove);
-  // });
   render();
   rocketMove();
   requestAnimationFrame(playCanvas);
@@ -90,3 +72,11 @@ function render() {
 }
 
 canvasDiv.appendChild(canvas);
+
+clickOverlay.addEventListener("click", () => {
+  canvas.height = 300;
+  canvas.width = 500;
+  playCanvas();
+  clickOverlay.classList.add("hidden");
+  contactContainer.classList.remove("hidden");
+});

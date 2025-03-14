@@ -77,18 +77,7 @@
     </nav>
     <main>
       <div class="hero container-fluid text-center">
-        <h1>Zoe's Hero</h1>
-        <p>
-          Information about me here. I will put a short description about
-          myself.
-          <br />
-          And about what I like to do.
-          <br />
-          About what I have made.
-          <br />
-          About what tools/things I have used to do so
-        </p>
-        <h2>I will add an image of something here</h2>
+        <h1>Hero</h1>
       </div>
       <div class="project-section container-fluid text-center">
         <h2 class="project-intro-text">
@@ -132,19 +121,23 @@
                   <img
                     src="./images/capmus with alleybird.png"
                     class="carousel-image d-block img-responsive"
-                    alt="..." />
+                    id="image1"
+                    alt="image of a moose and a bird in an alley" />
                 </div>
                 <div class="carousel-item carousel-image2">
                   <img
                     src="./images/Capmus.jpg"
                     class="carousel-image d-block img-responsive"
-                    alt="..." />
+                    id="image2"
+                    alt="image of a moose with a cap on it" />
                 </div>
                 <div class="carousel-item carousel-image3">
                   <img
                     src="./images/willow.jpg"
                     class="carousel-image d-block img-responsive"
-                    alt="..." />
+                    alt="image of a yellow labrador sitting in a living room"
+                    id="image3" />
+
                 </div>
               </div>
             </div>
@@ -160,48 +153,38 @@
         </div>
       </div>
       <p class="project-text text-center">image 1 has active class</p>
-      <hr />
-      <!-- RIP OUT BELOW -->
-      <div class="hero container-fluid text-center">
-        <h1>Tester Text</h1>
-        <p>Put some text here</p>
-      </div>
-      <!-- RIP OUT ABOVE -->
     </main>
     <footer>
-      <div class="container-fluid text-center">
-        <h2>Footer here</h2>
-        <div class="hero container-fluid text-center">
-          <p>HTML Canvas for contact details</p>
-          <div class="canvas-container container-fluid text-center"></div>
-          <div class="click-overlay">Click Me</div>
+      <div class=" container-fluid text-center">
+        <div
+          class="canvas-container container-fluid text-center"></div>
+        <div class="click-overlay container-fluid text-center">Click Me</div>
+      </div>
+      <br />
+      <div class="contact-container row-container">
+        <div class=" d-inline-block col-xs-4">
+          <a
+            class=" contact-btn dropdown-item"
+            href="https://www.linkedin.com/feed/"
+            target="blank"
+            alt="Button to Zoe Cox's LinkedIn page">
+            <btn
+              class="d-inline-block btn btn-info">LinkedIn</btn></a>
         </div>
-        <br />
-        <div class="row-container">
-          <div class="d-inline-block col-xs-4">
-            <a
-              class="dropdown-item"
-              href="https://www.linkedin.com/feed/"
-              target="blank"
-              alt="Button to Zoe Cox's LinkedIn page">
-              <btn class="d-inline-block btn btn-info">LinkedIn</btn></a>
-          </div>
-          <div class="d-inline-block col-xs-4">
-            <a
-              class="dropdown-item"
-              href="https://github.com/ZoeCox"
-              target="blank"
-              alt="Button to Zoe Cox's GitHub page"><btn
-                class="btn btn-info">GitHub</btn></a>
-          </div>
-          <div class="d-inline-block col-xs-4">
-            <a
-              class="dropdown-item"
-              href="mailto:zoemcox16@gmail.com"
-              alt="Button for Zoe Cox's contact email"><btn
-                class="btn btn-info">Email</btn></a>
-          </div>
-          <p>I will have name and contact information affirmed here</p>
+        <div class="d-inline-block col-xs-4">
+          <a
+            class=" contact-btn dropdown-item"
+            href="https://github.com/ZoeCox"
+            target="blank"
+            alt="Button to Zoe Cox's GitHub page"><btn
+              class=" btn btn-info">GitHub</btn></a>
+        </div>
+        <div class="d-inline-block col-xs-4">
+          <a
+            class="contact-btn dropdown-item"
+            href="mailto:zoemcox16@gmail.com"
+            alt="Button for Zoe Cox's contact email"><btn
+              class=" btn btn-info">Email</btn></a>
         </div>
       </div>
     </footer>

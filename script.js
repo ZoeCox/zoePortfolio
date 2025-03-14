@@ -1,49 +1,35 @@
-// const projectText = document.querySelector(".project-text");
+const projectText = document.querySelector(".project-text");
 
-// const carouselImg1 = document.querySelector(".carousel-image1");
-// const carouselImg2 = document.querySelector(".carousel-image2");
-// const carouselImg3 = document.querySelector(".carousel-image3");
+const carouselImg1 = document.querySelector("#image1");
+const carouselImg2 = document.querySelector("#image2");
+const carouselImg3 = document.querySelector("#image3");
 
-// const carouselImages = [carouselImg1, carouselImg2, carouselImg3];
+const carouselImages = [carouselImg1, carouselImg2, carouselImg3];
 
-// const carouselSlides = document.querySelectorAll(".carousel-item");
+const carouselSlides = document.querySelectorAll(".carousel-item");
 
-// const carouselTracker = {
-//   img1Active: true,
-//   img2Active: false,
-//   img3Active: false,
-// };
+const carouselTracker = [carouselImg1, carouselImg2, carouselImg3];
 
-// const carouselBtns = document.querySelectorAll(".carousel-button");
-// const carouselVar = document.querySelector(".carousel-whole");
+const nextBtn = document.querySelector(".carousel-control-next-icon");
+const prevBtn = document.querySelector(".carousel-control-prev-icon");
+const carouselBtns = [nextBtn, prevBtn];
 
-// for (let i = 0; i < carouselBtns.length; i++) {
-//   carouselBtns[i].addEventListener("click", function () {
-//     console.log(carouselSlides);
-//   });
-// }
+const carouselVar = document.querySelector(".carousel-whole");
+// console.log(carouselTracker[0], carouselTracker[1], carouselTracker[2]);
 
-// console.log(carouselSlides);
-
-// carouselVar.addEventListener("slide.bs.carousel", () => {
-//   console.log("you switched slide");
-//   // let currentIndex = carouselSlides.index();
-//   // console.log(currentIndex);
-// });
-
-// for (let i = 0; i < carouselBtns.length; i++) {
-//   carouselBtns[i].addEventListener("click", function () {});
-// }
-
-// // for (let i = 0; i < carouselBtns.length; i++) {
-// //   carouselBtns[i].addEventListener("click", function () {
-// //     if (carouselImg2.classList.contains(".active")) {
-// //       console.log("image 2 active");
-// //       projectText.innerHTML = "This is image two";
-// //     } else {
-// //       projectText.innerHTML = "This isn't image two";
-// //     }
-// //   });
-// // }
-
-// // projectText.innerHTML = "hello";
+for (let i = 0; i < carouselTracker.length; i++) {
+  let activeOption = carouselTracker[i];
+  for (let j = 0; j < carouselBtns.length; j++) {
+    carouselBtns[j].addEventListener("click", function () {
+      if (carouselBtns[j] === nextBtn) {
+        activeOption = carouselTracker[i + 1];
+        console.log(activeOption);
+      }
+      if (carouselBtns[j] === prevBtn) {
+        activeOption = carouselTracker[i - 1];
+      }
+    });
+  }
+}
+//FIXXXX!!!!
+// projectText.innerHTML = "hello";
