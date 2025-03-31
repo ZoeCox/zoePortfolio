@@ -18,6 +18,10 @@ h2 {
  color: yellow;
 }
 
+.hero{
+  margin: 2em 0 2em 0;
+}
+
 p {
   color: rgb(255, 255, 255);
 }
@@ -54,6 +58,7 @@ nav {
 
 .project-text {
   margin-top: 3em;
+  text-decoration: underline;
 }
 
 .project-text:hover{

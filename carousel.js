@@ -20,6 +20,9 @@ projectText.addEventListener("click", () => {
   if (projectText.innerHTML === "Happy Dog Toys - Dog Toy Web Shop") {
     textLinkHandler("https://happy-dog-toys.zoecox.co.uk/");
   }
+  if (projectText.innerHTML === "Table Tennis - Two Player Game") {
+    textLinkHandler("https://tennis-game.zoecox.co.uk/");
+  }
 });
 
 nextBtn.addEventListener("click", () => {
@@ -29,7 +32,7 @@ nextBtn.addEventListener("click", () => {
         projectText.innerHTML = "Princess of Bramboria - Text Adventure Game";
       }
       if (carouselImages[i] === carouselImg2) {
-        projectText.innerHTML = "This is a yellow labrador";
+        projectText.innerHTML = "Table Tennis - Two Player Game";
       }
       if (carouselImages[i] === carouselImg3) {
         projectText.innerHTML = "Happy Dog Toys - Dog Toy Web Shop";
@@ -38,11 +41,11 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
-prevBtn.addEventListener("click", () => {
+https: prevBtn.addEventListener("click", () => {
   for (let i = carouselImages.length - 1; i >= 0; i--) {
     if (carouselImages[i].classList.contains("active")) {
       if (carouselImages[i] === carouselImg1) {
-        projectText.innerHTML = "This is a yellow labrador";
+        projectText.innerHTML = "Table Tennis - Two Player Game";
       }
       if (carouselImages[i] === carouselImg2) {
         projectText.innerHTML = "Happy Dog Toys - Dog Toy Web Shop";
