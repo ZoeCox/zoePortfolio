@@ -40,10 +40,10 @@ nav {
 
 @keyframes characterAnimate {
   from {
-    background-position: 0;
+    background-position: 464px;
   }
   to {
-    background-position: 464px;
+    background-position: 0;
   }
 }
 
@@ -54,6 +54,11 @@ nav {
 
 .project-text {
   margin-top: 3em;
+}
+
+.project-text:hover{
+  color: yellow;
+  cursor: pointer;
 }
 
 .carousel-whole {
